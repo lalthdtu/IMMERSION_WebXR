@@ -147,18 +147,15 @@
         text-align: center;
         padding: 20px 0;
       }
-
-      /* --- FIX FOR UNITY CANVAS POSITIONING --- */
       #demo #unity-container.unity-desktop {
-        position: relative; /* Override the absolute positioning */
+        position: relative;
         top: auto;
         left: auto;
-        transform: none; /* Remove the centering transform */
-        width: 960px; /* Match canvas width for proper centering */
-        height: 600px; /* Match canvas height */
-        margin: 20px auto 0; /* Add top margin and center horizontally */
+        transform: none;
+        width: 960px;
+        height: 600px;
+        margin: 20px auto 0;
       }
-      /* --- END FIX --- */
     </style>
   </head>
   <body>
@@ -174,11 +171,10 @@
         </nav>
       </div>
     </header>
-
     <section class="hero">
       <div class="container">
         <h2>
-          Rethinking human decision-making through XR and behavioural data
+          Explaining human decision-making by combining choice and process data
         </h2>
         <p>
           An ERC Starting Grant Project (2024-2029) hosted at the Technical
@@ -193,27 +189,36 @@
         <div class="about-content">
           <div class="text">
             <p>
-              Decision-making permeates every aspect of our lives, from daily
-              commutes to major life choices. Understanding the 'why' behind our
-              decisions is crucial for addressing global challenges like climate
-              change and public health. Yet, traditional methods often fail to
-              capture the complexity of human thought processes, focusing only
-              on the final outcome.
+              Decision-making is a core element of human activity, and the
+              decisions we make can have significant consequences for ourselves,
+              others, and the world we live in. Thus, the ability to explain and
+              predict decision-making is vital for improving individual and
+              societal outcomes, especially when addressing global challenges
+              like climate change, sustainable energy, ageing populations, and
+              public health. Mathematical models of decision-making can help us
+              to understand and predict human behaviour.
             </p>
             <p>
-              IMMERSION aims to change that. This project develops new methods
-              to combine traditional choice data with rich 'process data'—such
-              as eye-tracking and neurophysiological measurements—collected in
-              highly realistic, immersive Extended Reality (XR) environments. By
-              creating a more complete picture of decision-making, IMMERSION
-              will equip researchers with a powerful new toolkit to explain and
-              predict human behaviour with unprecedented accuracy.
+              Despite significant progress, several scientific challenges
+              persist in the applicability of advanced behavioural models to
+              real-world problems. Many models focus on predicting decision
+              outcomes rather than explaining the decision process itself.
+              Information contained in neurophysiological process data that
+              emerge during decision-making are often ignored, and methods for
+              collecting behavioural data fail to create realistic impressions
+              of scenarios representing the future.
             </p>
             <p>
-              The insights gained will have far-reaching impacts, particularly
-              for the human-centric design of future transport systems, and will
-              create a paradigm shift in behavioural research across many
-              fields.
+              IMMERSION aims to advance the study of human decision-making by
+              developing new innovative methods for combining choice and process
+              data. This includes new models for integrating choice and process
+              data, new statistical inference procedures tailored to such
+              models, and new methods for collecting rich behavioural data in
+              immersive experiments. The proposed research will create a
+              paradigm shift in behavioural research with impacts on many
+              application domains. IMMERSION will equip researchers with a new
+              powerful toolkit for extracting deep behavioural insights from
+              rich data using advanced models.
             </p>
           </div>
           <div class="pi-info">
@@ -236,7 +241,10 @@
         <div class="objectives-grid">
           <div class="objective-card">
             <div class="icon">O1</div>
-            <h4>Make Models Applicable</h4>
+            <h4>
+              Make advanced behavioural models applicable to real-world
+              problems.
+            </h4>
             <p>
               Make advanced behavioural models applicable to real-world
               problems.
@@ -246,16 +254,21 @@
             <div class="icon">O2</div>
             <h4>Leverage Process Data</h4>
             <p>
-              Formulate new models that leverage process data to better explain
-              and predict decisions.
+              Formulate new behavioural models that leverage the information
+              contained in various types of process data to better explain and
+              predict decision-making.
             </p>
           </div>
           <div class="objective-card">
             <div class="icon">O3</div>
-            <h4>Develop New Inference Procedures</h4>
+            <h4>
+              Devise new computationally efficient statistical inference
+              procedures
+            </h4>
             <p>
               Devise new computationally efficient statistical inference
-              procedures for large-scale applications.
+              procedures to facilitate the integration of choice and process
+              data in large-scale applications.
             </p>
           </div>
           <div class="objective-card">
@@ -270,8 +283,10 @@
             <div class="icon">O5</div>
             <h4>Apply to Real-World Problems</h4>
             <p>
-              Apply these methods to provide new insights into human
-              decision-making and quantify the importance of process data.
+              Apply the newly developed methods to real-world problems to
+              provide new insights into human decision-making and quantify the
+              absolute and relative importance of different types of process
+              data.
             </p>
           </div>
         </div>
@@ -285,33 +300,34 @@
           <div class="stream">
             <h4>RS1: Data Collection</h4>
             <p>
-              Developing and deploying crowdsourced immersive XR experiments to
-              gather rich behavioural data, including biomarkers, neuroimaging
-              (EEG), and eye-tracking.
+              Tapping into the full potential of immersive XR experiments for
+              gathering choice and process data, including establishing an XR
+              lab and formulating procedures for crowdsourcing experiments to
+              the web.
             </p>
           </div>
           <div class="stream">
             <h4>RS2: Modelling</h4>
             <p>
-              Creating new modelling approaches that integrate choice data with
-              various types of process data under a unified framework to improve
-              explanatory and predictive power.
+              Formulating and testing new modelling approaches for integrating
+              choice data and various types of process data under a unified
+              framework.
             </p>
           </div>
           <div class="stream">
             <h4>RS3: Statistical Inference</h4>
             <p>
-              Deriving new, computationally efficient statistical methods to
-              make these advanced models fast, scalable, and accessible for
-              empirical work.
+              Deriving, implementing, and evaluating new statistical inference
+              procedures tailored to advanced behavioural models that integrate
+              choice and process data.
             </p>
           </div>
           <div class="stream">
             <h4>RS4: Applications</h4>
             <p>
-              Applying these innovations to practical case studies, including
-              urban transport infrastructure, pedestrian-AV interactions, and
-              wayfinding, to generate new insights.
+              Putting methodological innovations to practical use in three case
+              studies to provide new insights into human decision-making with
+              implications for the human-centric design of transport systems.
             </p>
           </div>
         </div>
@@ -322,29 +338,33 @@
       <div class="container">
         <h2 class="section-title">Case Studies & Applications</h2>
         <p style="text-align: center; max-width: 800px; margin: auto">
-          IMMERSION will put its methodological innovations into practice
-          through extensive empirical work with implications for the
-          human-centric design of future transport systems. The case studies
-          will derive profound new behavioural insights in the contexts of:
+          The proposed research includes substantial empirical work applying
+          IMMERSION's methodological innovations to real-world problems with
+          implications for the human-centric design of future transport systems.
+          This work includes case studies to explain and predict human
+          decision-making in the contexts of:
         </p>
         <div class="objectives-grid" style="margin-top: 40px">
           <div class="objective-card">
             <h4>Transportation Infrastructure</h4>
             <p>
-              Studying how people make decisions about new transportation
-              infrastructure.
+              Studying human decision-making in the context of transportation
+              infrastructure development.
             </p>
           </div>
           <div class="objective-card">
             <h4>Pedestrian-AV Interactions</h4>
             <p>
-              Investigating the dynamics between pedestrians and autonomous
-              vehicles.
+              Investigating decision-making related to pedestrian-autonomous
+              vehicle interactions.
             </p>
           </div>
           <div class="objective-card">
             <h4>Pedestrian Wayfinding</h4>
-            <p>Analyzing how people navigate through different environments.</p>
+            <p>
+              Analyzing human decision-making in the context of pedestrian
+              wayfinding.
+            </p>
           </div>
         </div>
       </div>
@@ -400,16 +420,14 @@
           Access the core project documents for a detailed overview of the
           research proposal.
         </p>
-        <a class="btn" target="_blank"
-          >Downloads coming.</a
-        >
+        <a class="btn" target="_blank">Downloads coming.</a>
       </div>
     </section>
 
     <footer>
       <div class="container">
         <p>
-          © 2024 IMMERSION Project | An ERC Starting Grant Project at the
+          © 2025 IMMERSION Project | An ERC Starting Grant Project at the
           Technical University of Denmark (DTU)
         </p>
       </div>
@@ -464,7 +482,7 @@
           meta.name = "viewport";
           meta.content =
             "width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes";
-          document.getElementsByTagName("head")[0].appendChild(meta);
+          document.getElementsByTagName("head").appendChild(meta);
           document.querySelector("#unity-container").className = "unity-mobile";
           canvas.className = "unity-mobile";
         } else {
