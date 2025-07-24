@@ -126,16 +126,18 @@
         text-align: center;
         background: #eef2f5;
       }
-      .demo-placeholder {
-        width: 100%;
-        max-width: 960px;
+      .demo-container {
+        width: 960px;
         height: 600px;
-        background: #ccc;
         margin: 20px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        border: 1px solid #ccc;
         border-radius: 8px;
+        overflow: hidden; /* Ensures the iframe corners are rounded */
+      }
+      .demo-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
       }
       .btn {
         display: inline-block;
@@ -354,13 +356,14 @@
           following is a demonstration of the WebXR technology that powers our
           experiments.
         </p>
-        <div class="demo-placeholder">
-          <a href="index.html" class="btn" target="_blank">Launch WebXR Demo</a>
+        <div class="demo-container">
+          <iframe src="index.html"></iframe>
         </div>
         <p>
           <small
-            >Note: The demo is a technical showcase and not a direct experiment
-            from the IMMERSION project.</small
+            >Note: The demo is a technical showcase. For it to run, the 'Build'
+            directory and all associated files must be hosted alongside
+            it.</small
           >
         </p>
       </div>
