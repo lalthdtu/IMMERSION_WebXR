@@ -127,9 +127,6 @@
         text-align: center;
         background: #eef2f5;
       }
-      #unity-container {
-        margin: auto;
-      }
       .btn {
         display: inline-block;
         background: #2c3e50;
@@ -150,6 +147,18 @@
         text-align: center;
         padding: 20px 0;
       }
+
+      /* --- FIX FOR UNITY CANVAS POSITIONING --- */
+      #demo #unity-container.unity-desktop {
+        position: relative; /* Override the absolute positioning */
+        top: auto;
+        left: auto;
+        transform: none; /* Remove the centering transform */
+        width: 960px; /* Match canvas width for proper centering */
+        height: 600px; /* Match canvas height */
+        margin: 20px auto 0; /* Add top margin and center horizontally */
+      }
+      /* --- END FIX --- */
     </style>
   </head>
   <body>
